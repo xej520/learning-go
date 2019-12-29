@@ -45,3 +45,14 @@ func TestFuncParams(t *testing.T)  {
 	// 将函数作为参数进行传递
 	learning(f)
 }
+
+func learning2(f func(string))  {
+	fmt.Printf("--->this is running func")
+	f("math")
+}
+
+func TestFuncParams2(t *testing.T)  {
+	f := study
+	// 将函数作为参数进行传递
+	learning2(f)
+}
